@@ -45,9 +45,20 @@ body {
   border: 1.5px solid $very-dark-violet;
   padding: 0.5rem 1.25rem;
   color: $very-dark-violet;
+  transition: all 250ms ease-in-out;
   &:hover {
     border: 1.5px solid $very-dark-violet;
     color: white;
     background-color: $very-dark-violet;
+  }
+}
+
+.btn-light {
+  border: 1.5px solid $very-light-gray;
+  color: $very-light-gray;
+  text-transform: uppercase;
+  &:hover {
+    background-color: $very-light-gray;
+    color: $very-dark-violet;
   }
 }

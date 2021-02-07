@@ -1,0 +1,25 @@
+.hero {
+  &__image {
+  }
+  &__content {
+    background-image: url(/image/bg-pattern-intro-left-mobile.svg),
+      url(/image/bg-pattern-intro-right-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, right 260%;
+    background-color: $darkViolet;
+    color: white;
+    text-align: center;
+    line-height: 1.2;
+    padding: 5rem 1.65rem;
+    h1 {
+      font-family: "DM Serif Display", serif;
+      font-size: 2.6rem;
+      margin-bottom: 1.25rem;
+    }
+    p {
+      margin-bottom: 2.5rem;
+      line-height: 1.5;
+      color: $very-light-gray;
+    }
+  }
+}
