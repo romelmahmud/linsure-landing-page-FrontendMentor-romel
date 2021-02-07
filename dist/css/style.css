@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  width: 80%;
+  max-width: 69.75rem;
+  margin: auto;
+}
+
+.btn {
+  border: 1.5px solid #2b272f;
+  padding: 0.5rem 1.25rem;
+  color: #2b272f;
+}
+
+.btn:hover {
+  border: 1.5px solid #2b272f;
+  color: white;
+  background-color: #2b272f;
+}
+
+header {
+  margin: 1.5rem auto;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 0;
+}
+
+@media (min-width: 40em) {
+  .nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 64em) {
+  .nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.nav__logo {
+  width: 7rem;
+  height: 1.25rem;
+}
+
+@media (min-width: 40em) {
+  .nav__logo {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .nav__logo {
+    margin-bottom: 0;
+  }
+}
+
+.nav__items {
+  display: none;
+}
+
+@media (min-width: 40em) {
+  .nav__items {
+    display: block;
+  }
+}
+
+.nav__items a {
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.nav__items a:not(:last-child) {
+  margin-right: 1.75rem;
+  color: #95a9c6;
+}
+
+.nav__items a:not(:last-child):hover {
+  color: #2b272f;
+}
+
+.nav__burgerMenu {
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
+@media (min-width: 40em) {
+  .nav__burgerMenu {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

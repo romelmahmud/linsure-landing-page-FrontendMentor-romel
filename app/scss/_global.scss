@@ -1,0 +1,53 @@
+// reset
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  display: block;
+}
+
+// import fonts
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+
+body {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  width: 80%;
+  max-width: 69.75rem;
+  margin: auto;
+}
+
+.btn {
+  border: 1.5px solid $very-dark-violet;
+  padding: 0.5rem 1.25rem;
+  color: $very-dark-violet;
+  &:hover {
+    border: 1.5px solid $very-dark-violet;
+    color: white;
+    background-color: $very-dark-violet;
+  }
+}

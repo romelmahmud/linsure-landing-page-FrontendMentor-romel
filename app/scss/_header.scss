@@ -1,0 +1,55 @@
+header {
+  margin: 1.5rem auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  @include breakpoint-up(medium) {
+    flex-direction: column;
+  }
+  @include breakpoint-up(large) {
+    flex-direction: row;
+  }
+
+  &__logo {
+    width: 7rem;
+    height: 1.25rem;
+    @include breakpoint-up(medium) {
+      margin-bottom: 2rem;
+    }
+    @include breakpoint-up(large) {
+      margin-bottom: 0;
+    }
+  }
+  &__items {
+    display: none;
+
+    @include breakpoint-up(medium) {
+      display: block;
+    }
+    a {
+      font-size: 1rem;
+      text-transform: uppercase;
+      transition: all 250ms ease-in-out;
+
+      &:not(:last-child) {
+        margin-right: 1.75rem;
+        color: $grayish-blue;
+        &:hover {
+          color: $very-dark-violet;
+        }
+      }
+    }
+  }
+  &__burgerMenu {
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    @include breakpoint-up(medium) {
+      display: none;
+    }
+  }
+}
