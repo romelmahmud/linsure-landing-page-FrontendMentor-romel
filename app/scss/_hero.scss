@@ -1,16 +1,18 @@
 .hero {
+  margin-bottom: 4rem;
+  z-index: 10;
   &__image {
   }
   &__content {
-    background-image: url(/image/bg-pattern-intro-left-mobile.svg),
-      url(/image/bg-pattern-intro-right-mobile.svg);
-    background-repeat: no-repeat, no-repeat;
-    background-position: top left, right 260%;
+    background-image: url(/image/bg-pattern-intro-left-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
     background-color: $darkViolet;
     color: white;
     text-align: center;
     line-height: 1.2;
     padding: 5rem 1.65rem;
+    position: relative;
     h1 {
       font-family: "DM Serif Display", serif;
       font-size: 2.6rem;
@@ -20,6 +22,14 @@
       margin-bottom: 2.5rem;
       line-height: 1.5;
       color: $very-light-gray;
+    }
+    img {
+      display: inline-block;
+      width: auto;
+      height: auto;
+      position: absolute;
+      right: 0;
+      bottom: -40%;
     }
   }
 }

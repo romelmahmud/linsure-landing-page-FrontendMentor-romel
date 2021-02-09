@@ -153,15 +153,21 @@ header {
   }
 }
 
+.hero {
+  margin-bottom: 4rem;
+  z-index: 10;
+}
+
 .hero__content {
-  background-image: url(/image/bg-pattern-intro-left-mobile.svg), url(/image/bg-pattern-intro-right-mobile.svg);
-  background-repeat: no-repeat, no-repeat;
-  background-position: top left, right 260%;
+  background-image: url(/image/bg-pattern-intro-left-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
   background-color: #2d2640;
   color: white;
   text-align: center;
   line-height: 1.2;
   padding: 5rem 1.65rem;
+  position: relative;
 }
 
 .hero__content h1 {
@@ -174,5 +180,14 @@ header {
   margin-bottom: 2.5rem;
   line-height: 1.5;
   color: #fafafa;
+}
+
+.hero__content img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 0;
+  bottom: -40%;
 }
 /*# sourceMappingURL=style.css.map */
