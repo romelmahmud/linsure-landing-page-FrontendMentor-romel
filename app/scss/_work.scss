@@ -1,0 +1,17 @@
+.work {
+  background-color: $darkViolet;
+  color: white;
+  text-align: center;
+  padding: 4.875rem 2.75rem;
+  background-image: url(/image/bg-pattern-intro-right-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: right -260%;
+  margin-bottom: 8.75rem;
+
+  h2 {
+    font-size: 2.25rem;
+    font-family: "DM Serif Display", serif;
+    margin-bottom: 2.875rem;
+    line-height: 1.2;
+  }
+}
