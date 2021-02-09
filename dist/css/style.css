@@ -259,4 +259,33 @@ header {
   margin-bottom: 2.875rem;
   line-height: 1.2;
 }
+
+.footer {
+  text-align: center;
+  background-color: #fafafa;
+  padding: 0 0 5.5rem;
+}
+
+.footer .container {
+  width: 100%;
+}
+
+.footer__container .footer__logoSocialContainer {
+  padding: 5.5rem 0;
+  background-image: url(/image/bg-pattern-mobile-nav.svg);
+  background-position: right top;
+  background-size: cover;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.footer__container .footer__logoSocialContainer .footer__logoSocial {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.footer img {
+  width: auto;
+  display: inline-block;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,25 @@
+.footer {
+  text-align: center;
+  background-color: $very-light-gray;
+  padding: 0 0 5.5rem;
+  .container {
+    width: 100%;
+  }
+  &__container {
+    .footer__logoSocialContainer {
+      padding: 5.5rem 0;
+      background-image: url(/image/bg-pattern-mobile-nav.svg);
+      background-position: right top;
+      background-size: cover;
+      transform: rotate(180deg);
+      .footer__logoSocial {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  img {
+    width: auto;
+    display: inline-block;
+  }
+}
