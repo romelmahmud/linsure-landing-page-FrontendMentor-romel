@@ -2,20 +2,38 @@
   text-align: center;
   background-color: $very-light-gray;
   padding: 0 0 5.5rem;
-  .container {
-    width: 100%;
-  }
   &__container {
     .footer__logoSocialContainer {
-      padding: 5.5rem 0;
+      padding: 2.5rem 0 5.5rem 0;
       background-image: url(/image/bg-pattern-mobile-nav.svg);
       background-position: right top;
       background-size: cover;
       transform: rotate(180deg);
+      margin-bottom: 1.875rem;
+
       .footer__logoSocial {
         transform: rotate(180deg);
+        .footer__logo {
+          margin-bottom: 2rem;
+        }
+        .footer__socialContainer {
+          img {
+            &:not(:last-child) {
+              margin-right: 1rem;
+            }
+          }
+        }
       }
     }
+  }
+  .divider {
+    width: 90%;
+    height: 2px;
+    background-color: $dark-grayish-violet;
+    margin: auto;
+  }
+  .container {
+    width: 100%;
   }
 
   img {
