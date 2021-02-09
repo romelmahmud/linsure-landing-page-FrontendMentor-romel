@@ -1,0 +1,43 @@
+.feature {
+  text-align: center;
+  margin-bottom: 8.75rem;
+  &__line {
+    width: 9.375rem;
+    height: 1px;
+    background-color: $dark-grayish-violet;
+    margin: 3rem auto;
+  }
+  h2 {
+    font-size: 2.25rem;
+    font-family: "DM Serif Display", serif;
+    margin-bottom: 2.875rem;
+    color: $darkViolet;
+  }
+  &__cardContainer {
+    display: flex;
+    flex-direction: column;
+
+    .feature__card {
+      &:not(:last-child) {
+        margin-bottom: 1.25rem;
+      }
+      .feature__icon {
+        img {
+          width: 6rem;
+          margin: 2.875rem auto;
+        }
+      }
+      h3 {
+        font-family: "DM Serif Display", serif;
+        font-size: 1.625rem;
+        margin-bottom: 1.625rem;
+        color: $darkViolet;
+      }
+      p {
+        font-size: 0.875rem;
+        line-height: 1.5;
+        color: $dark-grayish-violet;
+      }
+    }
+  }
+}
