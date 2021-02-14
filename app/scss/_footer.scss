@@ -1,7 +1,7 @@
 .footer {
   text-align: center;
   background-color: $very-light-gray;
-  padding: 0 0 5.5rem;
+  // padding: 0 0 4.5rem;
   &__container {
     .footer__logoSocialContainer {
       padding: 2.5rem 0 5.5rem 0;
@@ -39,5 +39,35 @@
   img {
     width: auto;
     display: inline-block;
+  }
+  &__linksContainer {
+    text-align: center;
+    padding-top: 2.75rem;
+
+    .footer__col {
+      display: flex;
+      flex-direction: column;
+      margin: 2.75rem;
+
+      a {
+        color: $very-dark-violet;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 0.75rem;
+        margin-bottom: 1.375rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .grey {
+        margin-bottom: 2.625rem;
+        color: $dark-grayish-violet;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
   }
 }

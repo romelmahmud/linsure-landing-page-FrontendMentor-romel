@@ -263,7 +263,6 @@ header {
 .footer {
   text-align: center;
   background-color: #fafafa;
-  padding: 0 0 5.5rem;
 }
 
 .footer__container .footer__logoSocialContainer {
@@ -303,5 +302,42 @@ header {
 .footer img {
   width: auto;
   display: inline-block;
+}
+
+.footer__linksContainer {
+  text-align: center;
+  padding-top: 2.75rem;
+}
+
+.footer__linksContainer .footer__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2.75rem;
+}
+
+.footer__linksContainer .footer__col a {
+  color: #2b272f;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.75rem;
+  margin-bottom: 1.375rem;
+}
+
+.footer__linksContainer .footer__col a:hover {
+  text-decoration: underline;
+}
+
+.footer__linksContainer .footer__col .grey {
+  margin-bottom: 2.625rem;
+  color: #837d87;
+}
+
+.footer__linksContainer .footer__col .grey:hover {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
