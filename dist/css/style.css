@@ -156,18 +156,77 @@ header {
 .hero {
   margin-bottom: 8.75rem;
   z-index: 10;
+  background-color: #2d2640;
+  position: relative;
+}
+
+@media (min-width: 64em) {
+  .hero {
+    position: relative;
+    margin-bottom: 15rem;
+  }
+}
+
+.hero .dp-none {
+  display: none;
+}
+
+@media (min-width: 64em) {
+  .hero .dp-none {
+    display: inline-block;
+    position: absolute;
+    height: auto;
+    width: auto;
+  }
+}
+
+.hero .left-pattern {
+  left: 0;
+  bottom: -80%;
+}
+
+.hero .right-pattern {
+  right: 0;
+  top: 0;
+}
+
+.hero .container {
+  width: 100%;
+}
+
+@media (min-width: 64em) {
+  .hero .container {
+    width: 80%;
+    max-width: 69.75rem;
+    margin: auto;
+  }
+}
+
+@media (min-width: 64em) {
+  .hero__image {
+    position: absolute;
+    bottom: -40%;
+    right: 5%;
+  }
 }
 
 .hero__content {
+  color: white;
   background-image: url(/image/bg-pattern-intro-left-mobile.svg);
   background-repeat: no-repeat;
   background-position: top left;
-  background-color: #2d2640;
-  color: white;
   text-align: center;
   line-height: 1.2;
   padding: 5rem 1.65rem 5.75rem;
   position: relative;
+}
+
+@media (min-width: 64em) {
+  .hero__content {
+    text-align: left;
+    width: 60%;
+    background-image: none;
+  }
 }
 
 .hero__content h1 {
@@ -189,6 +248,12 @@ header {
   position: absolute;
   right: 0;
   bottom: -40%;
+}
+
+@media (min-width: 64em) {
+  .hero__content img {
+    display: none;
+  }
 }
 
 .feature {

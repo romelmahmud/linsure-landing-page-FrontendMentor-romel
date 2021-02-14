@@ -1,18 +1,63 @@
 .hero {
   margin-bottom: 8.75rem;
   z-index: 10;
+  background-color: $darkViolet;
+  position: relative;
+
+  @include breakpoint-up(large) {
+    position: relative;
+    margin-bottom: 15rem;
+  }
+  .dp-none {
+    display: none;
+    @include breakpoint-up(large) {
+      display: inline-block;
+      position: absolute;
+      height: auto;
+      width: auto;
+    }
+  }
+
+  .left-pattern {
+    left: 0;
+    bottom: -80%;
+  }
+  .right-pattern {
+    right: 0;
+    top: 0;
+  }
+
+  .container {
+    width: 100%;
+
+    @include breakpoint-up(large) {
+      width: 80%;
+      max-width: 69.75rem;
+      margin: auto;
+    }
+  }
+
   &__image {
+    @include breakpoint-up(large) {
+      position: absolute;
+      bottom: -40%;
+      right: 5%;
+    }
   }
   &__content {
+    color: white;
     background-image: url(/image/bg-pattern-intro-left-mobile.svg);
     background-repeat: no-repeat;
     background-position: top left;
-    background-color: $darkViolet;
-    color: white;
     text-align: center;
     line-height: 1.2;
     padding: 5rem 1.65rem 5.75rem;
     position: relative;
+    @include breakpoint-up(large) {
+      text-align: left;
+      width: 60%;
+      background-image: none;
+    }
     h1 {
       font-family: "DM Serif Display", serif;
       font-size: 2.6rem;
@@ -30,6 +75,9 @@
       position: absolute;
       right: 0;
       bottom: -40%;
+      @include breakpoint-up(large) {
+        display: none;
+      }
     }
   }
 }
