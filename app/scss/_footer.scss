@@ -43,7 +43,7 @@
     display: none;
     @include breakpoint-up(medium) {
       display: block;
-      // transform: rotate(180deg);
+
       position: absolute;
       top: 0;
       left: 0;

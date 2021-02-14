@@ -1,30 +1,55 @@
 .feature {
   text-align: center;
   margin-bottom: 8.75rem;
+  @include breakpoint-up(large) {
+    text-align: left;
+  }
   &__line {
     width: 9.375rem;
-    height: 1px;
-    background-color: $dark-grayish-violet;
+    height: 2px;
+    background-color: hsl(273, 4%, 80%);
     margin: 3rem auto;
+    @include breakpoint-up(large) {
+      margin: 3rem 0;
+    }
   }
   h2 {
     font-size: 2.25rem;
     font-family: "DM Serif Display", serif;
     margin-bottom: 2.875rem;
     color: $darkViolet;
+    @include breakpoint-up(large) {
+      font-size: 2.875rem;
+    }
   }
   &__cardContainer {
     display: flex;
     flex-direction: column;
+    @include breakpoint-up(large) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
 
     .feature__card {
+      @include breakpoint-up(large) {
+        text-align: left;
+      }
+
       &:not(:last-child) {
         margin-bottom: 1.25rem;
+        @include breakpoint-up(large) {
+          margin-right: 1.75rem;
+          margin-bottom: 0;
+        }
       }
       .feature__icon {
         img {
-          width: 6rem;
-          margin: 2.875rem auto;
+          width: 5rem;
+          margin: 2rem auto;
+          @include breakpoint-up(large) {
+            margin: 2rem 0;
+            width: 5rem;
+          }
         }
       }
       h3 {
@@ -37,6 +62,15 @@
         font-size: 0.875rem;
         line-height: 1.5;
         color: $dark-grayish-violet;
+        @include breakpoint-up(medium) {
+          width: 60%;
+          margin: 0 auto 1.625rem;
+          font-size: 1rem;
+        }
+        @include breakpoint-up(large) {
+          width: 100%;
+          margin-bottom: 1.625rem;
+        }
       }
     }
   }

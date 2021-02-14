@@ -196,11 +196,23 @@ header {
   margin-bottom: 8.75rem;
 }
 
+@media (min-width: 64em) {
+  .feature {
+    text-align: left;
+  }
+}
+
 .feature__line {
   width: 9.375rem;
-  height: 1px;
-  background-color: #837d87;
+  height: 2px;
+  background-color: #cccace;
   margin: 3rem auto;
+}
+
+@media (min-width: 64em) {
+  .feature__line {
+    margin: 3rem 0;
+  }
 }
 
 .feature h2 {
@@ -208,6 +220,12 @@ header {
   font-family: "DM Serif Display", serif;
   margin-bottom: 2.875rem;
   color: #2d2640;
+}
+
+@media (min-width: 64em) {
+  .feature h2 {
+    font-size: 2.875rem;
+  }
 }
 
 .feature__cardContainer {
@@ -220,13 +238,45 @@ header {
           flex-direction: column;
 }
 
+@media (min-width: 64em) {
+  .feature__cardContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 64em) {
+  .feature__cardContainer .feature__card {
+    text-align: left;
+  }
+}
+
 .feature__cardContainer .feature__card:not(:last-child) {
   margin-bottom: 1.25rem;
 }
 
+@media (min-width: 64em) {
+  .feature__cardContainer .feature__card:not(:last-child) {
+    margin-right: 1.75rem;
+    margin-bottom: 0;
+  }
+}
+
 .feature__cardContainer .feature__card .feature__icon img {
-  width: 6rem;
-  margin: 2.875rem auto;
+  width: 5rem;
+  margin: 2rem auto;
+}
+
+@media (min-width: 64em) {
+  .feature__cardContainer .feature__card .feature__icon img {
+    margin: 2rem 0;
+    width: 5rem;
+  }
 }
 
 .feature__cardContainer .feature__card h3 {
@@ -240,6 +290,21 @@ header {
   font-size: 0.875rem;
   line-height: 1.5;
   color: #837d87;
+}
+
+@media (min-width: 40em) {
+  .feature__cardContainer .feature__card p {
+    width: 60%;
+    margin: 0 auto 1.625rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .feature__cardContainer .feature__card p {
+    width: 100%;
+    margin-bottom: 1.625rem;
+  }
 }
 
 .work {
