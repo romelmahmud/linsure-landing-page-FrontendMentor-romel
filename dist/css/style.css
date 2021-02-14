@@ -491,7 +491,7 @@ header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 80%;
+    width: 90%;
     max-width: 69.75rem;
     margin: auto;
   }
@@ -535,7 +535,7 @@ header {
 
 @media (min-width: 40em) {
   .footer .divider {
-    width: 80%;
+    width: 90%;
     max-width: 69.75rem;
   }
 }
@@ -564,7 +564,7 @@ header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 80%;
+    width: 90%;
     max-width: 69.75rem;
     margin: auto;
   }

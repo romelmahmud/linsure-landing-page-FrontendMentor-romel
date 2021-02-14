@@ -22,7 +22,7 @@
         @include breakpoint-up(medium) {
           display: flex;
           justify-content: space-between;
-          width: 80%;
+          width: 90%;
           max-width: 69.75rem;
           margin: auto;
         }
@@ -60,7 +60,7 @@
     background-color: hsl(273, 4%, 80%);
     margin: auto;
     @include breakpoint-up(medium) {
-      width: 80%;
+      width: 90%;
       max-width: 69.75rem;
     }
     @include breakpoint-up(large) {
@@ -78,7 +78,7 @@
     @include breakpoint-up(medium) {
       display: flex;
       justify-content: space-between;
-      width: 80%;
+      width: 90%;
       max-width: 69.75rem;
       margin: auto;
     }
