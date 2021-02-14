@@ -263,6 +263,7 @@ header {
 .footer {
   text-align: center;
   background-color: #fafafa;
+  position: relative;
 }
 
 .footer__container .footer__logoSocialContainer {
@@ -275,9 +276,31 @@ header {
   margin-bottom: 1.875rem;
 }
 
+@media (min-width: 40em) {
+  .footer__container .footer__logoSocialContainer {
+    background-image: none;
+    padding: 0.5rem 0 4.5rem 0;
+    margin-bottom: 0;
+  }
+}
+
 .footer__container .footer__logoSocialContainer .footer__logoSocial {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+@media (min-width: 40em) {
+  .footer__container .footer__logoSocialContainer .footer__logoSocial {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 80%;
+    max-width: 69.75rem;
+    margin: auto;
+  }
 }
 
 .footer__container .footer__logoSocialContainer .footer__logoSocial .footer__logo {
@@ -288,11 +311,33 @@ header {
   margin-right: 1rem;
 }
 
+.footer .dp-none {
+  display: none;
+}
+
+@media (min-width: 40em) {
+  .footer .dp-none {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: -20%;
+    z-index: 10;
+  }
+}
+
 .footer .divider {
   width: 90%;
   height: 2px;
-  background-color: #837d87;
+  background-color: #cccace;
   margin: auto;
+}
+
+@media (min-width: 40em) {
+  .footer .divider {
+    width: 80%;
+    max-width: 69.75rem;
+  }
 }
 
 .footer .container {
@@ -309,6 +354,28 @@ header {
   padding-top: 2.75rem;
 }
 
+@media (min-width: 40em) {
+  .footer__linksContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 80%;
+    max-width: 69.75rem;
+    margin: auto;
+  }
+}
+
+@media (min-width: 64em) {
+  .footer__linksContainer {
+    width: 70%;
+    margin: auto 10%;
+    text-align: left;
+  }
+}
+
 .footer__linksContainer .footer__col {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -317,7 +384,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 2.75rem;
+  margin-bottom: 2.75rem;
 }
 
 .footer__linksContainer .footer__col a {
@@ -333,7 +400,7 @@ header {
 }
 
 .footer__linksContainer .footer__col .grey {
-  margin-bottom: 2.625rem;
+  margin-bottom: 2rem;
   color: #837d87;
 }
 

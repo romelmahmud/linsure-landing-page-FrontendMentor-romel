@@ -1,6 +1,7 @@
 .footer {
   text-align: center;
   background-color: $very-light-gray;
+  position: relative;
   // padding: 0 0 4.5rem;
   &__container {
     .footer__logoSocialContainer {
@@ -10,9 +11,21 @@
       background-size: cover;
       transform: rotate(180deg);
       margin-bottom: 1.875rem;
+      @include breakpoint-up(medium) {
+        background-image: none;
+        padding: 0.5rem 0 4.5rem 0;
+        margin-bottom: 0;
+      }
 
       .footer__logoSocial {
         transform: rotate(180deg);
+        @include breakpoint-up(medium) {
+          display: flex;
+          justify-content: space-between;
+          width: 80%;
+          max-width: 69.75rem;
+          margin: auto;
+        }
         .footer__logo {
           margin-bottom: 2rem;
         }
@@ -26,11 +39,27 @@
       }
     }
   }
+  .dp-none {
+    display: none;
+    @include breakpoint-up(medium) {
+      display: block;
+      // transform: rotate(180deg);
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-bottom: -20%;
+      z-index: 10;
+    }
+  }
   .divider {
     width: 90%;
     height: 2px;
-    background-color: $dark-grayish-violet;
+    background-color: hsl(273, 4%, 80%);
     margin: auto;
+    @include breakpoint-up(medium) {
+      width: 80%;
+      max-width: 69.75rem;
+    }
   }
   .container {
     width: 100%;
@@ -43,11 +72,23 @@
   &__linksContainer {
     text-align: center;
     padding-top: 2.75rem;
+    @include breakpoint-up(medium) {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      max-width: 69.75rem;
+      margin: auto;
+    }
+    @include breakpoint-up(large) {
+      width: 70%;
+      margin: auto 10%;
+      text-align: left;
+    }
 
     .footer__col {
       display: flex;
       flex-direction: column;
-      margin: 2.75rem;
+      margin-bottom: 2.75rem;
 
       a {
         color: $very-dark-violet;
@@ -62,7 +103,7 @@
       }
 
       .grey {
-        margin-bottom: 2.625rem;
+        margin-bottom: 2rem;
         color: $dark-grayish-violet;
         &:hover {
           text-decoration: none;
