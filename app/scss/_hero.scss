@@ -5,8 +5,8 @@
   position: relative;
 
   @include breakpoint-up(large) {
-    position: relative;
     margin-bottom: 15rem;
+    padding-top: 1rem;
   }
   .dp-none {
     display: none;
@@ -23,8 +23,8 @@
     bottom: -80%;
   }
   .right-pattern {
-    right: 0;
-    top: 0;
+    right: 0%;
+    top: -17%;
   }
 
   .container {
@@ -34,14 +34,15 @@
       width: 80%;
       max-width: 69.75rem;
       margin: auto;
+      position: relative;
     }
   }
 
   &__image {
     @include breakpoint-up(large) {
       position: absolute;
-      bottom: -40%;
-      right: 5%;
+      bottom: -20%;
+      right: 0;
     }
   }
   &__content {
@@ -57,16 +58,36 @@
       text-align: left;
       width: 60%;
       background-image: none;
+      padding-left: 0;
+      margin-right: 2.5rem;
+    }
+
+    .hero__line {
+      width: 9.375rem;
+      height: 2px;
+      background-color: lightgrey;
+      margin-bottom: 2rem;
+      display: none;
+      @include breakpoint-up(large) {
+        display: block;
+      }
     }
     h1 {
       font-family: "DM Serif Display", serif;
       font-size: 2.6rem;
       margin-bottom: 1.25rem;
+      @include breakpoint-up(large) {
+        font-size: 3.125rem;
+        width: 80%;
+      }
     }
     p {
       margin-bottom: 2.5rem;
       line-height: 1.5;
       color: $very-light-gray;
+      @include breakpoint-up(large) {
+        width: 90%;
+      }
     }
     img {
       display: inline-block;

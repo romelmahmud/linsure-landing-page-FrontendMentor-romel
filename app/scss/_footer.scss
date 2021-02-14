@@ -26,6 +26,9 @@
           max-width: 69.75rem;
           margin: auto;
         }
+        @include breakpoint-up(large) {
+          width: 100%;
+        }
         .footer__logo {
           margin-bottom: 2rem;
         }
@@ -60,9 +63,9 @@
       width: 80%;
       max-width: 69.75rem;
     }
-  }
-  .container {
-    width: 100%;
+    @include breakpoint-up(large) {
+      width: 100%;
+    }
   }
 
   img {
@@ -80,8 +83,8 @@
       margin: auto;
     }
     @include breakpoint-up(large) {
-      width: 70%;
-      margin: auto 10%;
+      width: 80%;
+      margin: 0;
       text-align: left;
     }
 

@@ -1,12 +1,15 @@
 header {
-  margin: 1.5rem auto;
+  // margin: 1.5rem auto;
+  position: relative;
+  z-index: 20;
+  padding: 2.5rem 0;
+  background-color: white;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 0;
   @include breakpoint-up(medium) {
     flex-direction: column;
   }

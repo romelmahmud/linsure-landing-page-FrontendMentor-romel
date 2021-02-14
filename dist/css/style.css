@@ -64,7 +64,10 @@ body {
 }
 
 header {
-  margin: 1.5rem auto;
+  position: relative;
+  z-index: 20;
+  padding: 2.5rem 0;
+  background-color: white;
 }
 
 .nav {
@@ -77,7 +80,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1.5rem 0;
 }
 
 @media (min-width: 40em) {
@@ -162,8 +164,8 @@ header {
 
 @media (min-width: 64em) {
   .hero {
-    position: relative;
     margin-bottom: 15rem;
+    padding-top: 1rem;
   }
 }
 
@@ -186,8 +188,8 @@ header {
 }
 
 .hero .right-pattern {
-  right: 0;
-  top: 0;
+  right: 0%;
+  top: -17%;
 }
 
 .hero .container {
@@ -199,14 +201,15 @@ header {
     width: 80%;
     max-width: 69.75rem;
     margin: auto;
+    position: relative;
   }
 }
 
 @media (min-width: 64em) {
   .hero__image {
     position: absolute;
-    bottom: -40%;
-    right: 5%;
+    bottom: -20%;
+    right: 0;
   }
 }
 
@@ -226,6 +229,22 @@ header {
     text-align: left;
     width: 60%;
     background-image: none;
+    padding-left: 0;
+    margin-right: 2.5rem;
+  }
+}
+
+.hero__content .hero__line {
+  width: 9.375rem;
+  height: 2px;
+  background-color: lightgrey;
+  margin-bottom: 2rem;
+  display: none;
+}
+
+@media (min-width: 64em) {
+  .hero__content .hero__line {
+    display: block;
   }
 }
 
@@ -235,10 +254,23 @@ header {
   margin-bottom: 1.25rem;
 }
 
+@media (min-width: 64em) {
+  .hero__content h1 {
+    font-size: 3.125rem;
+    width: 80%;
+  }
+}
+
 .hero__content p {
   margin-bottom: 2.5rem;
   line-height: 1.5;
   color: #fafafa;
+}
+
+@media (min-width: 64em) {
+  .hero__content p {
+    width: 90%;
+  }
 }
 
 .hero__content img {
@@ -465,6 +497,12 @@ header {
   }
 }
 
+@media (min-width: 64em) {
+  .footer__container .footer__logoSocialContainer .footer__logoSocial {
+    width: 100%;
+  }
+}
+
 .footer__container .footer__logoSocialContainer .footer__logoSocial .footer__logo {
   margin-bottom: 2rem;
 }
@@ -502,8 +540,10 @@ header {
   }
 }
 
-.footer .container {
-  width: 100%;
+@media (min-width: 64em) {
+  .footer .divider {
+    width: 100%;
+  }
 }
 
 .footer img {
@@ -532,8 +572,8 @@ header {
 
 @media (min-width: 64em) {
   .footer__linksContainer {
-    width: 70%;
-    margin: auto 10%;
+    width: 80%;
+    margin: 0;
     text-align: left;
   }
 }
