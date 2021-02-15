@@ -33,7 +33,7 @@ body {
 }
 
 .no-scroll {
-  overflow-y: none;
+  overflow-y: hidden !important;
 }
 
 .container {
@@ -168,7 +168,6 @@ header {
   height: 2rem;
   width: 2rem;
   cursor: pointer;
-  display: none;
 }
 
 .dropDown__linksContainer {
@@ -198,9 +197,15 @@ header {
   z-index: 20;
 }
 
+@media (min-width: 40em) {
+  .dropDown__linksContainer {
+    display: none;
+  }
+}
+
 .dropDown__linksContainer a {
   margin-bottom: 2.5rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: white;
   text-transform: uppercase;
 }

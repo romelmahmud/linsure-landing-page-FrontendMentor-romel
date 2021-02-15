@@ -59,7 +59,6 @@ header {
     height: 2rem;
     width: 2rem;
     cursor: pointer;
-    display: none;
   }
 }
 
@@ -79,10 +78,13 @@ header {
   transition: transform 350ms ease-in-out;
   position: absolute;
   z-index: 20;
+  @include breakpoint-up(medium) {
+    display: none;
+  }
 
   a {
     margin-bottom: 2.5rem;
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: white;
     text-transform: uppercase;
 
