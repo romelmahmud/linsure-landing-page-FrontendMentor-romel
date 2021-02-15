@@ -35,6 +35,9 @@ body {
   font-weight: 400;
 }
 
+.no-scroll {
+  overflow-y: none;
+}
 .container {
   width: 80%;
   max-width: 69.75rem;
@@ -61,4 +64,8 @@ body {
     background-color: $very-light-gray;
     color: $very-dark-violet;
   }
+}
+
+.slide {
+  transform: translateX(0%) !important;
 }

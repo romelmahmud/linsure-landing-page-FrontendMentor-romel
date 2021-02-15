@@ -32,6 +32,10 @@ body {
   font-weight: 400;
 }
 
+.no-scroll {
+  overflow-y: none;
+}
+
 .container {
   width: 80%;
   max-width: 69.75rem;
@@ -61,6 +65,11 @@ body {
 .btn-light:hover {
   background-color: #fafafa;
   color: #2b272f;
+}
+
+.slide {
+  -webkit-transform: translateX(0%) !important;
+          transform: translateX(0%) !important;
 }
 
 header {
@@ -179,12 +188,14 @@ header {
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: contain;
-}
-
-@media (min-width: 40em) {
-  .dropDown__linksContainer {
-    background-image: none;
-  }
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 350ms ease-in-out;
+  transition: -webkit-transform 350ms ease-in-out;
+  transition: transform 350ms ease-in-out;
+  transition: transform 350ms ease-in-out, -webkit-transform 350ms ease-in-out;
+  position: absolute;
+  z-index: 20;
 }
 
 .dropDown__linksContainer a {
@@ -192,8 +203,6 @@ header {
   font-size: 1rem;
   color: white;
   text-transform: uppercase;
-  -webkit-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
 }
 
 .dropDown__linksContainer a:not(:last-child):hover {
