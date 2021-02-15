@@ -27,6 +27,10 @@ img {
   display: block;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Karla", sans-serif;
   font-weight: 400;
@@ -164,12 +168,6 @@ header {
   }
 }
 
-.nav__close {
-  height: 2rem;
-  width: 2rem;
-  cursor: pointer;
-}
-
 .dropDown__linksContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -189,10 +187,10 @@ header {
   background-size: contain;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
-  -webkit-transition: -webkit-transform 350ms ease-in-out;
-  transition: -webkit-transform 350ms ease-in-out;
-  transition: transform 350ms ease-in-out;
-  transition: transform 350ms ease-in-out, -webkit-transform 350ms ease-in-out;
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
   position: absolute;
   z-index: 20;
 }
@@ -522,6 +520,7 @@ header {
   text-align: center;
   background-color: #fafafa;
   position: relative;
+  padding-bottom: 2rem;
 }
 
 .footer__container .footer__logoSocialContainer {
@@ -650,6 +649,9 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.footer__linksContainer .footer__col:not(:last-child) {
   margin-bottom: 2.75rem;
 }
 

@@ -2,7 +2,7 @@
   text-align: center;
   background-color: $very-light-gray;
   position: relative;
-  // padding: 0 0 4.5rem;
+  padding-bottom: 2rem;
   &__container {
     .footer__logoSocialContainer {
       padding: 2.5rem 0 5.5rem 0;
@@ -91,7 +91,9 @@
     .footer__col {
       display: flex;
       flex-direction: column;
-      margin-bottom: 2.75rem;
+      &:not(:last-child) {
+        margin-bottom: 2.75rem;
+      }
 
       a {
         color: $very-dark-violet;

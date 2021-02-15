@@ -51,14 +51,10 @@ header {
     height: 2rem;
     width: 2rem;
     cursor: pointer;
+
     @include breakpoint-up(medium) {
       display: none;
     }
-  }
-  &__close {
-    height: 2rem;
-    width: 2rem;
-    cursor: pointer;
   }
 }
 
@@ -75,7 +71,8 @@ header {
   background-position: bottom right;
   background-size: contain;
   transform: translateX(-100%);
-  transition: transform 350ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+
   position: absolute;
   z-index: 20;
   @include breakpoint-up(medium) {

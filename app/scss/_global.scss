@@ -30,6 +30,9 @@ img {
 
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Karla", sans-serif;
   font-weight: 400;

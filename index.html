@@ -11,6 +11,15 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
     <title>Insure Landing Page</title>
   </head>
   <body>
@@ -20,10 +29,10 @@
           <img src="/image/logo.svg" alt="logo" />
         </div>
         <div class="nav__items">
-          <a href="#" class="nav-links">How we work</a>
-          <a href="#" class="nav-links">Blog</a>
-          <a href="#" class="nav-links">Account</a>
-          <a href="" class="btn btn-dark">View Plans</a>
+          <a href="#feature" class="nav-links">How we work</a>
+          <a href="#work" class="nav-links">Blog</a>
+          <a href="#footer" class="nav-links">Account</a>
+          <a href="#feature" class="btn btn-dark">View Plans</a>
         </div>
         <div class="nav__burgerMenu">
           <img src="/image/icon-hamburger.svg" alt="hamburger" />
@@ -32,10 +41,10 @@
       </nav>
     </header>
     <div class="dropDown__linksContainer">
-      <a href="#" class="nav-links">How we work</a>
-      <a href="#" class="nav-links">Blog</a>
-      <a href="#" class="nav-links">Account</a>
-      <a href="" class="btn btn-light">View Plans</a>
+      <a href="#feature" class="mb-nav-links">How we work</a>
+      <a href="#work" class="mb-nav-links">Blog</a>
+      <a href="#footer" class="mb-nav-links">Account</a>
+      <a href="#feature" class="mb-nav-links btn btn-light">View Plans</a>
     </div>
     <main>
       <section class="hero">
@@ -60,7 +69,7 @@
       <img src="/image/bg-pattern-intro-right-desktop.svg" alt="pattern" class="dp-none right-pattern">
       </section>
       <!-- hero :end--->
-      <section class="feature container">
+      <section class="feature container" id="feature">
         <div class="feature__line"></div>
         <h2 class="feature__title"> We’re different</h2>
         <div class="feature__cardContainer">
@@ -93,13 +102,13 @@
         </div>
       </section>
     </section>
-      <section class="work container">
+      <section class="work container" id="work">
         <h2>Find out more about how we work</h2>
         <a href="" class="btn btn-light">How we work</a>
 
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="footer__container container">
         <div class="footer__logoSocialContainer">
           <div class="footer__logoSocial">
@@ -145,6 +154,12 @@
         </div><!--linksContainer-->
       </div>
     </footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://twitter.com/romel_mahmud">Romel Mahmud</a>.
+    </div>
     <script src="/app/js/app.js"></script>
   </body>
 </html>
