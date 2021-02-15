@@ -55,4 +55,45 @@ header {
       display: none;
     }
   }
+  &__close {
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    display: none;
+  }
+}
+
+.dropDown__linksContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  background-color: #141414;
+  padding: 3.375rem 0 18rem 0;
+  background-image: url(/image/bg-pattern-mobile-nav.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+  @include breakpoint-up(medium) {
+    background-image: none;
+  }
+
+  a {
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+    color: white;
+    text-transform: uppercase;
+    transition: all 250ms ease-in-out;
+
+    &:not(:last-child) {
+      &:hover {
+        color: $dark-grayish-violet;
+      }
+    }
+    &.btn {
+      width: 60%;
+      margin: auto;
+    }
+  }
 }
